@@ -87,6 +87,7 @@ ENT.Seats = {
 		pos = Vector(81.625, 70.102, 85.36 - 5),
 		exit = Vector(33.336, 70.102, 85.36),
 		ang = Angle(0,90,0),
+		weapons = {"Door minigun"},
 	},
 	{
 		pos = Vector(114.59 , -68.49, 85.36 - 5),
@@ -118,7 +119,40 @@ ENT.Weapons = {
 			Sequential = true,
 			FireRate = 3000
 		}
+	},
+	["Door minigun"] = {
+		class = "wac_pod_gunner",
+		info = {
+			ShootPos = Vector(100,96,128),
+			ShootOffset = Vector(30,0,0),
+			FireRate = 1632,
+			BulletType = "wac_base_7mm",
+			Ammo = 1,
+			TkAmmo = 0,
+			Sounds = {
+				spin = "warkanum/minigun_shoot.wav",
+				shoot1p = "",
+				shoot3p = "",
+			}
+		}
+	},
+}
+ENT.WeaponAttachments = {
+	gun = {
+		model = "models/gredwitch/fallout4/minigun.mdl",
+		pos = Vector(100,95,120),
+		restrictPitch = false,
 	}
+
+}
+ENT.Camera = {
+	model = "models/mm1/box.mdl",
+	pos = Vector(100,95,120),
+	offset = Vector(25,0,0),
+	viewPos = Vector(30, 1, 8),
+	minAng = Angle(-180, -180, -180),
+	maxAng = Angle(180, 180, 180),
+	seat = 5
 }
 
 ENT.Sounds = {
