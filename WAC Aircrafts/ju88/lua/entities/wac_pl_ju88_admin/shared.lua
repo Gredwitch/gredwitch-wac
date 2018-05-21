@@ -4,7 +4,7 @@ ENT.Type = "anim"
 ENT.Category = "Gredwitch's Stuff"
 ENT.Spawnable = true
 ENT.AdminSpawnable = true
-ENT.PrintName = "[WAC]Junkers Ju 88(Admin)"
+ENT.PrintName = "[WAC]Junkers Ju 88 (Admin)"
 ENT.Model				= "models/gredwitch/ju88/ju88.mdl"
 ENT.RotorPhModel		= "models/props_junk/sawblade001a.mdl"
 ENT.RotorModel			= "models/gredwitch/ju88/ju88_prop.mdl"
@@ -53,13 +53,13 @@ ENT.Seats = {
 	{
 		pos=Vector(156,0,0),
 		exit=Vector(400,0,0),
-		weapons={"100Kg Bombs", "Front MG131"}
+		weapons={"Front MG 15","100Kg Bombs"}
 	},
 	{
 		pos=Vector(143,0,0),
 		ang=Angle(0,180,0),
 		exit=Vector(400,0,0),
-		weapons={"Back MG81"}
+		weapons={"Back MG 15"}
 	},
 }
 
@@ -73,12 +73,9 @@ ENT.Weapons = {
 			},
 			Kind = "gb_bomb_sc100",
 			Admin = 1,
-			Sounds = {
-			    fire = "bomb/bomb_whistle_0"..math.random(1,4)..".wav"
-			},
 		}
 	},
-	["Front MG131"] = {
+	["Front MG 15"] = {
 		class = "wac_pod_mg",
 		info = {
 			Pods = {
@@ -90,40 +87,47 @@ ENT.Weapons = {
 			},
 			Sequential = true,
 			BulletType = "wac_base_7mm",
-			Ammo = 1000,
+			Ammo = 1,
 			TkAmmo = 0,
-			FireRate = 750,
+			FireRate = 1000,
 		}
 	},
-	["Back MG81"] = {
+	["Back MG 15"] = {
 		class = "wac_pod_gunner",
 		info = {
 			Sounds = {
 	            shoot1p = "",
 	            shoot3p = "",
-            	spin = "wac/ju88/shoot.wav"
+            	spin = "wac/he111/shoot.wav"
             },
-			ShootPos = Vector(90,0,70),
-			BulletType = "wac_base_7mm",
-			ShootOffset = Vector(0,0,0),
+			ShootPos = Vector(100,0,35),
+			ShootOffset = Vector(40,0,0),
 			Sequential = true,
-			Ammo = 1000,
+			BulletType = "wac_base_7mm",
+			Ammo = 1,
 			TkAmmo = 0,
-			FireRate = 750
+			FireRate = 1000
 		}
 	}
 }
 
-ENT.Camera = {
-	model = "models/mm1/box.mdl",
-	pos = Vector(90,0,45),
-	offset = Vector(0,0,0),
-	viewPos = Vector(0,0,0),
-	minAng = Angle(-180,-180, -180),
-	maxAng = Angle(180, 180, 180),
-	seat = 2
+ENT.WeaponAttachments={
+	gun = {
+		model = "models/gredwitch/ju88/mg15_gun.mdl",
+		pos = Vector(100,0,30),
+	},
+	
 }
 
+ENT.Camera = {
+	model = "models/mm1/box.mdl", 
+	pos = Vector(100,0,40),
+	offset = Vector(30,0,0), 
+	viewPos = Vector(0,0,0),
+	minAng = Angle(-60, -360,0),
+	maxAng = Angle(25, 360,0),
+	seat = 2
+}
 
 ENT.Sounds={
 	Start="wac/ju88/start.wav",
@@ -135,5 +139,3 @@ ENT.Sounds={
 	LowHealth="",
 	CrashAlarm="",
 }
-
-function ENT:DrawPilotHud() end

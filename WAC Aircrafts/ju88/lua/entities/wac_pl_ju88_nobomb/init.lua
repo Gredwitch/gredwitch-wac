@@ -34,14 +34,14 @@ ENT.Aerodynamics = {
 
 function ENT:PhysicsUpdate(ph)
 	self:base("wac_pl_base").PhysicsUpdate(self,ph)
-	--[[
+	
 	if self.rotorRpm > 0.5 and self.rotorRpm < 0.89 and IsValid(self.rotorModel) and IsValid(self.OtherRotorModel) then
 		self.rotorModel:SetBodygroup(0,1)
 		self.OtherRotorModel:SetBodygroup(0,1)
 	elseif self.rotorRpm < 0.8 and IsValid(self.rotorModel) and IsValid(self.OtherRotorModel) then
 		self.rotorModel:SetBodygroup(0,0)
 		self.OtherRotorModel:SetBodygroup(0,0)
-	end--]]
+	end
 	
 	local trace=util.QuickTrace(self:LocalToWorld(Vector(0,0,62)), self:LocalToWorld(Vector(0,0,50)), {self, self.Wheels[1], self.Wheels[2], self.Wheels[3], self.TopRotor})
 	local phys=self:GetPhysicsObject()

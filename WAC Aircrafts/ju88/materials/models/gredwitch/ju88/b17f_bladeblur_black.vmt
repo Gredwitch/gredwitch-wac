@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/gredwitch/ju88/b17f_bladeblur_black"
+	"$nocull"	1
+	"$translucent"	1
+	"$model"		1
+	"$nodecal" 1
+    "$surfaceprop" "metal"
+
+
+
+}

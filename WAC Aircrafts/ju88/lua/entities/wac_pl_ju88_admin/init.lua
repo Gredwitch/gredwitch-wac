@@ -1,6 +1,7 @@
 
 include("shared.lua")
 AddCSLuaFile("shared.lua")
+AddCSLuaFile("cl_init.lua")
 
 function ENT:SpawnFunction(p, tr)
 	if (!tr.Hit) then return end
@@ -10,7 +11,7 @@ function ENT:SpawnFunction(p, tr)
 	e:Spawn()
 	e:Activate()
 	e:SetBodygroup(3,0)
-	e:SetSkin(math.random(0,4))
+	e:SetSkin(math.random(0,6))
 	return e
 end
 
@@ -34,14 +35,14 @@ ENT.Aerodynamics = {
 
 function ENT:PhysicsUpdate(ph)
 	self:base("wac_pl_base").PhysicsUpdate(self,ph)
-	--[[
+	
 	if self.rotorRpm > 0.5 and self.rotorRpm < 0.89 and IsValid(self.rotorModel) and IsValid(self.OtherRotorModel) then
 		self.rotorModel:SetBodygroup(0,1)
 		self.OtherRotorModel:SetBodygroup(0,1)
 	elseif self.rotorRpm < 0.8 and IsValid(self.rotorModel) and IsValid(self.OtherRotorModel) then
 		self.rotorModel:SetBodygroup(0,0)
 		self.OtherRotorModel:SetBodygroup(0,0)
-	end--]]
+	end
 	
 	local trace=util.QuickTrace(self:LocalToWorld(Vector(0,0,62)), self:LocalToWorld(Vector(0,0,50)), {self, self.Wheels[1], self.Wheels[2], self.Wheels[3], self.TopRotor})
 	local phys=self:GetPhysicsObject()
@@ -51,14 +52,14 @@ function ENT:PhysicsUpdate(ph)
 				self.wheels[i]:SetRenderMode(RENDERMODE_TRANSALPHA)
 				self.wheels[i]:SetColor(Color(255,255,255,0))
 				self.wheels[i]:SetSolid(SOLID_NONE)
-				self:SetBodygroup(1,1)
+				self:SetBodygroup(2,1)
 			end
 		elseif self.controls.throttle<0 and trace.HitPos:Distance( self:LocalToWorld(Vector(0,0,62)) ) > 50 then
 			for i=1,3 do 
 				self.wheels[i]:SetRenderMode(RENDERMODE_NORMAL)
 				self.wheels[i]:SetColor(Color(255,255,255,255))
 				self.wheels[i]:SetSolid(SOLID_VPHYSICS)
-				self:SetBodygroup(1,0)
+				self:SetBodygroup(2,0)
 			end
 		end
 	end

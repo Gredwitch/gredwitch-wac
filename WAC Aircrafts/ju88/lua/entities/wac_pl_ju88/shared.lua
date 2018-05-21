@@ -53,13 +53,13 @@ ENT.Seats = {
 	{
 		pos=Vector(156,0,0),
 		exit=Vector(400,0,0),
-		weapons={"100Kg Bombs", "Front MG131"}
+		weapons={"Front MG 15","100Kg Bombs"}
 	},
 	{
 		pos=Vector(143,0,0),
 		ang=Angle(0,180,0),
 		exit=Vector(400,0,0),
-		weapons={"Back MG81"}
+		weapons={"Back MG 15"}
 	},
 }
 
@@ -71,22 +71,46 @@ ENT.Weapons = {
 				Vector(70,0,-28),
 				Vector(70,12,-28),
 				Vector(70,-12,-28),
+				
 				Vector(110,0,-28),
 				Vector(110,12,-28),
 				Vector(110,-12,-28),
+				
 				Vector(150,0,-28),
 				Vector(150,12,-28),
 				Vector(150,-12,-28),
+				
+				Vector(70,0,-20),
+				Vector(70,12,-20),
+				Vector(70,-12,-20),
+				
 				Vector(110,0,-20),
+				Vector(110,12,-20),
+				Vector(110,-12,-20),
+				
+				Vector(150,0,-20),
+				Vector(150,12,-20),
+				Vector(150,-12,-20),
+				
+				Vector(70,0,-12),
+				Vector(70,12,-12),
+				Vector(70,-12,-12),
+				
+				Vector(110,0,-12),
+				Vector(110,12,-12),
+				Vector(110,-12,-12),
+				
+				Vector(150,0,-12),
+				Vector(150,12,-12),
+				Vector(150,-12,-12),
+				
+				Vector(110,0,-4),
 				
 			},
 			Kind = "gb_bomb_sc100",
-			Sounds = {
-			    fire = "bomb/bomb_whistle_0"..math.random(1,4)..".wav"
-			},
 		}
 	},
-	["Front MG131"] = {
+	["Front MG 15"] = {
 		class = "wac_pod_mg",
 		info = {
 			Pods = {
@@ -98,35 +122,43 @@ ENT.Weapons = {
 			},
 			Sequential = true,
 			BulletType = "wac_base_7mm",
-			Ammo = 1000,
-			FireRate = 750,
+			Ammo = 375,
+			FireRate = 1000,
 		}
 	},
-	["Back MG81"] = {
+	["Back MG 15"] = {
 		class = "wac_pod_gunner",
 		info = {
 			Sounds = {
 	            shoot1p = "",
 	            shoot3p = "",
-            	spin = "wac/ju88/shoot.wav"
+            	spin = "wac/he111/shoot.wav"
             },
-			ShootPos = Vector(90,0,70),
-			ShootOffset = Vector(0,0,0),
+			ShootPos = Vector(100,0,35),
+			ShootOffset = Vector(40,0,0),
 			Sequential = true,
 			BulletType = "wac_base_7mm",
-			Ammo = 1000,
-			FireRate = 750
+			Ammo = 600,
+			FireRate = 1000
 		}
 	}
 }
 
+ENT.WeaponAttachments={
+	gun = {
+		model = "models/gredwitch/ju88/mg15_gun.mdl",
+		pos = Vector(100,0,30),
+	},
+	
+}
+
 ENT.Camera = {
-	model = "models/mm1/box.mdl",
-	pos = Vector(90,0,45),
-	offset = Vector(0,0,0),
+	model = "models/mm1/box.mdl", 
+	pos = Vector(100,0,40),
+	offset = Vector(30,0,0), 
 	viewPos = Vector(0,0,0),
-	minAng = Angle(-180,-180, -180),
-	maxAng = Angle(180, 180, 180),
+	minAng = Angle(-60, -360,0),
+	maxAng = Angle(25, 360,0),
 	seat = 2
 }
 
@@ -140,5 +172,3 @@ ENT.Sounds={
 	LowHealth="",
 	CrashAlarm="",
 }
-
-function ENT:DrawPilotHud() end
