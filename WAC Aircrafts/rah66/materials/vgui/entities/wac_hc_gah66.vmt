@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "vgui/entities/wac_hc_gah66"
+	"$vertexcolor" 			1
+	"$vertexalpha" 			1
+	"$nolod" 				1
+}

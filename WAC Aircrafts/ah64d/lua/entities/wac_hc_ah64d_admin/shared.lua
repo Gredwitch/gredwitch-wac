@@ -87,6 +87,7 @@ ENT.Weapons = {
 			},
 			Ammo = 1,
 			TkAmmo = 0,
+			FaF = true,
 			FireRate = 150,
 		}
 	},
@@ -98,6 +99,7 @@ ENT.Weapons = {
 				Vector(55,110,11),
 			},
 			Ammo = 1,
+			FaF = true,
 			TkAmmo = 0,
 			FireRate = 150,
 		}

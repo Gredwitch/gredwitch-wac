@@ -33,9 +33,9 @@ ENT.thirdPerson = {
 
 
 function ENT:attachmentThink()
-	if !self.weapons.M197 then return end
+	if !self.weapons.XM301 then return end
 	local gun = self.weaponAttachments.gun
-	gun.roll = (gun.roll and gun.roll+self.weapons.M197:GetSpinSpeed()*FrameTime()*1500 or 0)
+	gun.roll = (gun.roll and gun.roll+self.weapons.XM301:GetSpinSpeed()*FrameTime()*1500 or 0)
 	self:base("wac_hc_base").attachmentThink(self)
 end
 
@@ -88,13 +88,6 @@ function ENT:DrawPilotHud()
 	local tr=util.QuickTrace(pos+self:GetUp()*10,Vector(0,0,-999999),self.Entity)
 	surface.DrawText("ALT  "..math.ceil((pos.z-tr.HitPos.z)*0.01905).."m")
 	
-	if self:GetNWInt("seat_1_actwep") == 1 and self.weapons["Hydra 70"] then
-		surface.SetTextPos(300,445)
-		local n = self.weapons["Hydra 70"]:GetAmmo()
-		surface.DrawText("Hydra 70" .. getspaces(n))
-	end
-	
 	cam.End3D2D()
 end
 
-function ENT:DrawWeaponSelection() end

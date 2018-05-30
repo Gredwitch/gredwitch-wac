@@ -31,12 +31,12 @@ ENT.Seats = {
 	{
 		pos = Vector(134, 0, 46),
 		exit = Vector(134,70,0),
-		weapons = {"Hydra 70","Hellfire", "M197"}
+		weapons = {"Hydra 70","Hellfire", "XM301"}
 	},
 	{
 		pos = Vector(78, 0, 56),
 		exit = Vector(78,70,0),
-		weapons = {"Hellfire", "M197"} --XM301 
+		weapons = {"Hellfire", "XM301"}
 	},
 }
 
@@ -85,10 +85,11 @@ ENT.Weapons = {
 			},
 			Ammo = 1,
 			TkAmmo = 0,
+			FaF = true,
 			FireRate = 200
 		}
 	},
-	["M197"] = { --XM301 
+	["XM301"] = { 
 		class = "wac_pod_gunner",
 		info = {
 			ShootPos = Vector(187, 0, 29),

@@ -1,0 +1,25 @@
+
+VertexlitGeneric
+{
+
+	$basetexture					models/jessev92/rambo/vehicles/common/leather_d
+	$bumpmap						models/jessev92/rambo/vehicles/common/leather_b
+	$lightwarptexture				dev/identitylightwarp
+	
+	$ambientocclusion				1
+	$ambientocclusiontexture		models/jessev92/rambo/vehicles/common/leather_ao
+	$halflambert					1
+
+	$phong							1
+	$phongboost						0.3
+	$phongexponent					75
+	$phongexponenttexture			dev/bump_dudv
+	$phongfresnelranges				"[ 0.2 1.2 8 ]"
+	$phongalbedotint				1
+
+	$detail          			   	models/jessev92/detail/leather
+	$detailscale					1
+	$detailblendfactor				0.25
+	$detailblendmode				0
+
+}

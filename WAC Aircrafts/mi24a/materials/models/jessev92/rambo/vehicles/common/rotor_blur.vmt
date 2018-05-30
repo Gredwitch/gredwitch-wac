@@ -1,0 +1,20 @@
+
+VertexlitGeneric
+{
+
+	$basetexture					models/jessev92/rambo/vehicles/common/rotor_blur_d
+	$bumpmap						dev/bump_normal
+	$lightwarptexture				dev/identitylightwarp
+	
+	$ambientocclusion				1
+	$halflambert					1
+	$translucent					1
+	$nocull							1
+
+	$phong							1
+	$phongexponenttexture			models/jessev92/fonv/Vehicles/B29/nv_b29_e
+	$phongexponent					75
+	$phongboost						1
+	$phongfresnelranges				"[ 1 6 15 ]"
+
+}

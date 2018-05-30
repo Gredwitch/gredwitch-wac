@@ -37,7 +37,7 @@ ENT.Seats = {
 	{
 		pos = Vector(135, 0, 2),
 		exit = Vector(134,90,0),
-		weapons = {"M230","Hellfire","Stinger"}
+		weapons = {"M230","Hellfire","AIM-92 Stinger"}
 	},
 }
 
@@ -85,9 +85,10 @@ ENT.Weapons = {
 			},
 			Ammo = 8,
 			FireRate = 150,
+			FaF = true,
 		}
 	},
-	["Stinger"] = {
+	["AIM-92 Stinger"] = {
 		class = "wac_pod_mis",
 		info = {
 			Pods = {
@@ -95,6 +96,7 @@ ENT.Weapons = {
 				Vector(55,110,11),
 			},
 			Ammo = 4,
+			FaF = true,
 			FireRate = 150,
 		}
 	},

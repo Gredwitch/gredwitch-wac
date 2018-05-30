@@ -42,6 +42,19 @@ ENT.Seats = {
 	},
 }
 
+ENT.Seats = {
+	{
+		pos=Vector(39, 1.2, -1.3),
+		exit=Vector(72,70,0),
+		weapons = {"Hydra 70"},
+	},
+	{
+		pos=Vector(100, 1, -10),
+		exit=Vector(120,70,0),
+		weapons = {"M197", "Hellfire"}
+	},
+}
+
 ENT.Weapons = {
 	["Hydra 70"] = {
 		class = "wac_pod_grocket",
@@ -50,24 +63,14 @@ ENT.Weapons = {
 			Firerate = 220,
 			Ammo = 1,
 			TkAmmo = 0,
+			BulletType = "wac_base_20mm",
 			Pods = {
 				Vector(35, 45, -20),
-				Vector(35, -45, -20)
+				Vector(35, -45, -20),
 			}
 		}
 	},
 	["Hellfire"] = {
-		class = "wac_pod_hellfire",
-		info = {
-			Pods = {
-				Vector(50, 60, -20),
-				Vector(50, -60, -20),
-			},
-			Ammo = 14,
-			TkAmmo = 0,
-		}
-	},
-	["AIM-9"] = {
 		class = "wac_pod_mis",
 		info = {
 			Pods = {
@@ -76,7 +79,7 @@ ENT.Weapons = {
 			},
 			Ammo = 1,
 			TkAmmo = 0,
-			model = "models/hawx/aim-9 sidewinder.mdl",
+			FaF = true,
 		}
 	},
 	["M197"] = {
@@ -84,13 +87,14 @@ ENT.Weapons = {
 		info = {
 			ShootPos = Vector(110, 2, -33),
 			ShootOffset = Vector(60, 0, 0),
-			TkAmmo = 0,
-			BulletType = "wac_base_20mm",
+			
 			Ammo = 1,
+			TkAmmo = 0,
+			FireRate = 720,
+			BulletType = "wac_base_20mm"
 		}
 	},
 }
-
 ENT.WeaponAttachments={
 
 	gunMount1 = {

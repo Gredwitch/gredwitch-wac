@@ -33,9 +33,9 @@ ENT.thirdPerson = {
 
 
 function ENT:attachmentThink()
-	if !self.weapons.M197 then return end
+	if !self.weapons.XM301 then return end
 	local gun = self.weaponAttachments.gun
-	gun.roll = (gun.roll and gun.roll+self.weapons.M197:GetSpinSpeed()*FrameTime()*1500 or 0)
+	gun.roll = (gun.roll and gun.roll+self.weapons.XM301:GetSpinSpeed()*FrameTime()*1500 or 0)
 	self:base("wac_hc_base").attachmentThink(self)
 end
 

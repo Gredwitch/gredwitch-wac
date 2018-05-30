@@ -38,7 +38,7 @@ ENT.Seats = {
 	{
 		pos=Vector(100, 1, -10),
 		exit=Vector(120,70,0),
-		weapons = {"M197", "Hellfire", "AIM-9"}
+		weapons = {"M197", "Hellfire"}
 	},
 }
 
@@ -48,7 +48,7 @@ ENT.Weapons = {
 		info = {
 			Sequential = true,
 			Firerate = 220,
-			Ammo = 40,
+			Ammo = 38,
 			BulletType = "wac_base_20mm",
 			Pods = {
 				Vector(35, 45, -20),
@@ -57,16 +57,6 @@ ENT.Weapons = {
 		}
 	},
 	["Hellfire"] = {
-		class = "wac_pod_hellfire",
-		info = {
-			Pods = {
-				Vector(50, 60, -20),
-				Vector(50, -60, -20),
-			},
-			Ammo = 14,
-		}
-	},
-	["AIM-9"] = {
 		class = "wac_pod_mis",
 		info = {
 			Pods = {
@@ -74,7 +64,7 @@ ENT.Weapons = {
 				Vector(50, -60, -20),
 			},
 			Ammo = 8,
-			model = "models/hawx/aim-9 sidewinder.mdl",
+			FaF = true,
 		}
 	},
 	["M197"] = {
@@ -82,8 +72,9 @@ ENT.Weapons = {
 		info = {
 			ShootPos = Vector(110, 2, -33),
 			ShootOffset = Vector(60, 0, 0),
-			TkAmmo = 0,
-			Ammo = 1000,
+			
+			Ammo = 750,
+			FireRate = 720,
 			BulletType = "wac_base_20mm"
 		}
 	},
