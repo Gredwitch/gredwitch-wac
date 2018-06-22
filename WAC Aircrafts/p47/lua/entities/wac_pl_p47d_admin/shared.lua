@@ -112,19 +112,17 @@ ENT.Weapons = {
 		}
 	}
 }
-
-
 ENT.Sounds={
-	Start="WAC/P51/Start.wav",
-	Blades="WAC/P51/external.wav",
-	Engine="radio/american.wav",
+	Start="WAC/p47/P47D_start_idle_stop.wav",
+	Blades="WAC/p47/P47D_rpm1.wav",
+	Engine="WAC/p47/P47D_rpm2.wav",
+	Radio="radio/american.wav",
 	MissileAlert="",
 	MissileShoot="",
 	MinorAlarm="",
 	LowHealth="",
 	CrashAlarm=""
 }
-
 local function DrawLine(v1,v2)
 	surface.DrawLine(v1.y,v1.z,v2.y,v2.z)
 end

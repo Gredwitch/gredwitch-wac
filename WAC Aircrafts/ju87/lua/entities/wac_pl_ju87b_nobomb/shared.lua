@@ -109,9 +109,10 @@ ENT.Camera = {
 }
 
 ENT.Sounds = {
-	Start="WAC/Stuka/Start.wav",
+	Start="WAC/Stuka/start.wav",
 	Blades="WAC/Stuka/external.wav",
-	Engine="radio/german.wav",
+	Engine="WAC/Stuka/internal.wav",
+	Radio="radio/german.wav",
 	MissileAlert="HelicopterVehicle/MissileNearby.mp3",
 	MissileShoot="HelicopterVehicle/MissileShoot.mp3",
 	MinorAlarm="HelicopterVehicle/MinorAlarm.mp3",

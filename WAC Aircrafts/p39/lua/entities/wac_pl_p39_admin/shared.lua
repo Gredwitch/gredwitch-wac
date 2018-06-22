@@ -104,11 +104,11 @@ ENT.Weapons = {
 	}
 }
 
-
 ENT.Sounds={
 	Start="WAC/P39/Start.wav",
 	Blades="WAC/P39/external.wav",
 	Engine="WAC/P39/internal.wav",
+	Radio="radio/american.wav",
 	MissileAlert="",
 	MissileShoot="",
 	MinorAlarm="",

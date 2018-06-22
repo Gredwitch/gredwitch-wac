@@ -204,16 +204,13 @@ ENT.Camera = {
 	maxAng = Angle(180, 180, 180),
 	seat = 5
 }
-
 ENT.Sounds={
 	Start="wac/b17g/startup.wav",
 	Blades="wac/b17g/exterior.wav",
-	Engine="radio/american.wav",
+	Engine="wac/b17g/interior.wav",
+	Radio="radio/american.wav",
 	MissileAlert="",
 	MinorAlarm="wac/b17g/minor.wav",
 	LowHealth="wac/b17g/low.wav",
 	CrashAlarm="wac/b17g/crash.wav"
 }
-
-function ENT:DrawPilotHud() end
-function ENT:DrawWeaponSelection() end

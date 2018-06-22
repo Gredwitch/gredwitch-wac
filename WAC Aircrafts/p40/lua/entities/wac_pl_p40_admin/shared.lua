@@ -96,6 +96,7 @@ ENT.Sounds={
 	Start="WAC/P40/Start.wav",
 	Blades="WAC/P40/external.wav",
 	Engine="WAC/P40/internal.wav",
+	Radio="",
 	MissileAlert="",
 	MissileShoot="",
 	MinorAlarm="",

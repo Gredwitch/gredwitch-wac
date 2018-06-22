@@ -91,18 +91,16 @@ ENT.Weapons = {
 		}
 	}
 }
-	
+
 ENT.Sounds={
 	Start="WAC/Bf109/Start.wav",
 	Blades="WAC/BF109/external.wav",
-	Engine="radio/german.wav",
+	Engine="WAC/BF109/internal.wav",
+	Radio="radio/german.wav",
 	MissileAlert="",
 	MissileShoot="",
 	MinorAlarm="",
 	LowHealth="",
 	CrashAlarm=""
 }
-
-
-function ENT:DrawPilotHud() end
 function ENT:DrawWeaponSelection() end

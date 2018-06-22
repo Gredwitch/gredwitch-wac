@@ -105,6 +105,7 @@ ENT.Sounds={
 	Start="wac/f86/start.wav",
 	Blades="wac/a10/external.wav",
 	Engine="wac/f86/internal.wav",
+	Radio="radio/american.wav",
 	MissileAlert="",
 	MissileShoot="",
 	MinorAlarm="",

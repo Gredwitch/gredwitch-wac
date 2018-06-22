@@ -123,6 +123,7 @@ ENT.Sounds={
 	Start="wac/fsx/f82/Start.wav",
 	Blades="wac/fsx/f82/external.wav",
 	Engine="wac/fsx/f82/internal.wav",
+	Radio="radio/american.wav",
 	MissileAlert="",
 	MissileShoot="",
 	MinorAlarm="wac/fsx/seafire/minor.wav",

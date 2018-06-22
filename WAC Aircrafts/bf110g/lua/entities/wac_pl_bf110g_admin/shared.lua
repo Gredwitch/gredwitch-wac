@@ -68,11 +68,7 @@ ENT.Weapons = {
 		class = "wac_pod_gbomb",
 		info = {
 			Pods = {
-				Vector(0,150,-16),
-				Vector(0,130,-16),
 				Vector(0,0,-28),
-				Vector(0,-150,-16),
-				Vector(0,-130,-16),
 			},
 			Kind = "gb_bomb_sc100",
 			Admin = 1
@@ -155,7 +151,8 @@ ENT.Camera = {
 ENT.Sounds={
 	Start="wac/bf110g/start.wav",
 	Blades="wac/bf110g/external.wav",
-	Engine="radio/german.wav",
+	Engine="wac/bf110g/internal.wav",
+	Radio="radio/german.wav",
 	MissileAlert="",
 	MissileShoot="",
 	MinorAlarm="",

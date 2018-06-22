@@ -75,7 +75,7 @@ ENT.Weapons = {
 			Pods = {
 				Vector(45, 0, 43),
 			},
-			Kind  = "gb_bomb_sc500",
+			Kind  = "gb_bomb_sc250",
 			Admin = 1,
 		},
 	},
@@ -120,11 +120,11 @@ ENT.Camera = {
 	minAng = Angle(-90, -360, 0),
 	seat = 2
 }
-
 ENT.Sounds = {
-	Start="WAC/Stuka/Start.wav",
+	Start="WAC/Stuka/start.wav",
 	Blades="WAC/Stuka/external.wav",
-	Engine="radio/german.wav",
+	Engine="WAC/Stuka/internal.wav",
+	Radio="radio/german.wav",
 	MissileAlert="HelicopterVehicle/MissileNearby.mp3",
 	MissileShoot="HelicopterVehicle/MissileShoot.mp3",
 	MinorAlarm="HelicopterVehicle/MinorAlarm.mp3",
@@ -132,5 +132,4 @@ ENT.Sounds = {
 	CrashAlarm="HelicopterVehicle/CrashAlarm.mp3"
 }
 
---local function DrawLine(v1,v2) end
 function ENT:DrawPilotHud() end

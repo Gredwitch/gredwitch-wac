@@ -117,6 +117,7 @@ ENT.Sounds={
 	Start="wac/f86/start.wav",
 	Blades="wac/f86/external.wav",
 	Engine="wac/f86/internal.wav",
+	Radio="radio/american.wav",
 	MissileAlert="HelicopterVehicle/MissileNearby.mp3",
 	MissileShoot="HelicopterVehicle/MissileShoot.mp3",
 	MinorAlarm="HelicopterVehicle/MinorAlarm.mp3",

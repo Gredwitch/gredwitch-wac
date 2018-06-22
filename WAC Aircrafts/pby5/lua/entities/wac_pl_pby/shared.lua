@@ -88,5 +88,5 @@ ENT.Weapons = {
 ENT.Sounds={
 	Start="WAC/pby/start.wav",
 	Blades="WAC/pby/external.wav",
-	Engine="radio/american",
+	Radio="radio/american",
 }

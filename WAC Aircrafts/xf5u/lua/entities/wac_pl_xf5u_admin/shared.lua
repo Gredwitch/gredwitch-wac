@@ -84,7 +84,7 @@ ENT.Weapons = {
 			Sequential = false,
 			Ammo = 1,
 			TkAmmo = 0,
-			FireRate = 500
+			FireRate = 751
 		}
 	},
 	["20mm cannons"] = {
@@ -126,7 +126,8 @@ ENT.Weapons = {
 ENT.Sounds={
 	Start="wac/fsx/f82/Start.wav",
 	Blades="wac/fsx/f82/external.wav",
-	Engine="radio/american.wav",
+	Engine="wac/fsx/f82/internal.wav",
+	Radio="radio/american.wav",
 	MissileAlert="",
 	MissileShoot="",
 	MinorAlarm="wac/fsx/seafire/minor.wav",

@@ -66,7 +66,7 @@ ENT.Weapons = {
 			}
 		}
 	},
-	["500Kg Bomb"] = {
+	["250Kg Bomb"] = {
 		class = "wac_pod_gbomb",
 		info = {
 			Sequential = true,
@@ -74,7 +74,7 @@ ENT.Weapons = {
 			Pods = {
 				Vector(45, 0, 43),
 			},
-			Kind  = "gb_bomb_sc500",
+			Kind  = "gb_bomb_sc250",
 		},
 	},
 	
@@ -99,7 +99,7 @@ ENT.Seats = {
 	{
 		pos=Vector(25,0,83.2),
 		exit=Vector(30,60,85),
-		weapons={"MG17", "500Kg Bomb"}
+		weapons={"MG17", "250Kg Bomb"}
 	},
 	{
 		pos=Vector(-18.5,0,77),
@@ -120,9 +120,10 @@ ENT.Camera = {
 }
 
 ENT.Sounds = {
-	Start="WAC/Stuka/Start.wav",
+	Start="WAC/Stuka/start.wav",
 	Blades="WAC/Stuka/external.wav",
-	Engine="radio/german.wav",
+	Engine="WAC/Stuka/internal.wav",
+	Radio="radio/german.wav",
 	MissileAlert="HelicopterVehicle/MissileNearby.mp3",
 	MissileShoot="HelicopterVehicle/MissileShoot.mp3",
 	MinorAlarm="HelicopterVehicle/MinorAlarm.mp3",

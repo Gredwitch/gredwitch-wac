@@ -83,6 +83,6 @@ function ENT:Think()
 	for i=1,3 do 
 		self.wheels[i]:SetSkin(self:GetSkin())
 	end
-	self:SetBodygroup(18,0)
-	self:SetBodygroup(19,0)
+	self:SetBodygroup(18,1)
+	self:SetBodygroup(19,1)
 end

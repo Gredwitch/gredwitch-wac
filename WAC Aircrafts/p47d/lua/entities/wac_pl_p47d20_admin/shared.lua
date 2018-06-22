@@ -129,8 +129,9 @@ ENT.Weapons = {
 
 ENT.Sounds={
 	Start="WAC/p47/P47D_start_idle_stop.wav",
-	Blades="WAC/p47/P47D_rpm2.wav",
-	Engine="radio/american.wav",
+	Blades="WAC/p47/P47D_rpm1.wav",
+	Engine="WAC/p47/P47D_rpm2.wav",
+	Radio="radio/american.wav",
 	MissileAlert="",
 	MissileShoot="",
 	MinorAlarm="",

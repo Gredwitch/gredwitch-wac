@@ -140,11 +140,11 @@ ENT.Camera = {
 	maxAng = Angle(25, 360,0),
 	seat = 2
 }
-
 ENT.Sounds={
 	Start="wac/he111/start.wav",
 	Blades="wac/he111/external.wav",
-	Engine="radio/german.wav",
+	Engine="",
+	Radio="radio/german.wav",
 	MissileAlert="",
 	MissileShoot="",
 	MinorAlarm="",

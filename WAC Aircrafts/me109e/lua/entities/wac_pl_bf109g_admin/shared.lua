@@ -57,7 +57,7 @@ ENT.Seats = {
 	{
 		pos=Vector(3.5,0,90),
 		exit=Vector(3.5,60,100),
-		weapons={"MG17"}
+		weapons={"MG17", "100Kg bomb"}
     }
 }					
 
@@ -80,23 +80,30 @@ ENT.Weapons = {
 			Ammo = 4000,
 			TkAmmo = 0,
 			Sequential = true,
-
-			}
+		}
+	},
+	["100Kg bomb"] = {
+		class = "wac_pod_gbomb",
+		info = {
+			Pods = {
+				Vector(48,0,49),
+			},
+			Kind = "gb_bomb_sc100",
+			Admin = 1
 		}
 	}
+}
 
-	
+
 ENT.Sounds={
 	Start="WAC/Bf109/Start.wav",
 	Blades="WAC/BF109/external.wav",
-	Engine="radio/german.wav",
+	Engine="WAC/BF109/internal.wav",
+	Radio="radio/german.wav",
 	MissileAlert="",
 	MissileShoot="",
 	MinorAlarm="",
 	LowHealth="",
 	CrashAlarm=""
 }
-
-
-function ENT:DrawPilotHud() end
 function ENT:DrawWeaponSelection() end
