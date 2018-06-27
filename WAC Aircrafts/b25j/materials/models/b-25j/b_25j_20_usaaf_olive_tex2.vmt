@@ -1,9 +1,20 @@
 "VertexLitGeneric"
 {
-	$basetexture 			"models/b-25j/b_25j_20_usaaf_olive_tex2_c"
-	$phong 		 			"1"
-	$bumpmap	 			"models/b-25j/b_25j_20_usaaf_olive_tex2_n"
-	$phongexponenttexture	"models/b-25j/b_25j_20_usaaf_olive_tex2_phong"
-	$phongboost				1.0
-	$phongfresnelranges		"[0 0.5 1]"
+	$basetexture			"models/b-25j/b_25j_20_usaaf_olive_tex2_c"
+	$bumpmap				"models/b-25j/b_25j_20_usaaf_olive_tex2_n"
+	$halflambert			1
+	$nocull 				1
+	$alphatest 				0
+
+	$phong 					1
+	$phongexponenttexture 	"models/b-25j/b_25j_20_usaaf_olive_tex2_phong"
+	$phongboost 			0.2
+	$phongfresnelranges		"[2 2 2]"
+
+	$PhongAlbedoTint 		1
+
+	$rimlight     			0
+	$rimlightexponent   	1
+	$rimlightboost   		0.3
+	$rimmask      			1
 }

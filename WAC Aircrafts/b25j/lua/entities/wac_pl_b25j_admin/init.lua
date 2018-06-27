@@ -124,11 +124,3 @@ function ENT:addRotors()
 	constraint.Axis(self, self.OtherRotor, 0, 0, self.OtherRotorPos, Vector(0,0,1), 0,0,0.01,1)
 	self:AddOnRemove(self.OtherRotor)
 end
-
-
-function ENT:Think()
-	self:base("wac_pl_base").Think(self)
-	if self.engineHealth <= 0 then
-		timer.Simple( 5, function() if IsValid(self) then self:Remove() end end )
-	end
-end
