@@ -91,7 +91,7 @@ ENT.Weapons = {
 		}
 	},
 	["JDAM GBU-38"] = {
-		class = "wac_pod_gbomb",
+		class = "wac_pod_jdam",
 		info = {
 			Pods = {
 				Vector(40,0,55),
@@ -108,8 +108,8 @@ ENT.Camera = {
 	pos = Vector(378,0,85),
 	offset = Vector(-1,0,0),
 	viewPos = Vector(2,0,0),
-	maxAng = Angle(45, 90, 0),
-	minAng = Angle(-2, -90, 0),
+	maxAng = Angle(90, 0, 0),
+	minAng = Angle(0, 0, 0),
 	seat = 1
 }
 

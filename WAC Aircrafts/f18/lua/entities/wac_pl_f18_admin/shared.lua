@@ -65,6 +65,7 @@ ENT.Seats = {
 	{
 		pos=Vector(108,0,105),
 		exit=Vector(110,100,40),
+		weapons={"500lb JDAM GBU-38", "500lb GBU-12 Paveway II", "AIM-9X", "AIM-120"}
 	}
 }
 
@@ -86,7 +87,7 @@ ENT.Weapons = {
 		}
 	},
 	["500lb JDAM GBU-38"] = {
-	    class = "wac_pod_gbomb",
+	    class = "wac_pod_jdam",
 		info = {
 		    Pods = {
 			    Vector(-70, -93, 70), --right
@@ -97,7 +98,7 @@ ENT.Weapons = {
 		}
 	},
 	["500lb GBU-12 Paveway II"] = {
-	    class = "wac_pod_gbomb",
+	    class = "wac_pod_jdam",
 		info = {
 		    Pods = {
 			    Vector(-100, -135, 70),
@@ -148,11 +149,11 @@ ENT.Sounds={
 
 ENT.Camera = {
 	model = "models/mm1/box.mdl",
-	pos = Vector(305,0,100),
+	pos = Vector(305,0,40),
 	offset = Vector(0,0,0),
 	viewPos = Vector(0, 0, 0),
 	minAng = Angle(0, 0, 0),
-	maxAng = Angle(0, 0, 0),
+	maxAng = Angle(90, 0, 0),
 	seat = 1
 }
 
@@ -188,7 +189,28 @@ if CLIENT then
 end
 
 //hud
-
+function ENT:DrawWeaponSelection()
+	local fwd = self:GetForward()
+	local ri = self:GetRight()
+	local ang = self:GetAngles()
+	local Black = Color( 0, 0, 0, 200 )
+	ang:RotateAroundAxis(ri, 90)
+	ang:RotateAroundAxis(fwd, 90)
+	for k, t in pairs(self.Seats) do
+		if k != "BaseClass" and self:getWeapon(k) then
+			cam.Start3D2D(self:LocalToWorld(Vector(17,5,29)*self.Scale + t.pos), ang, 0.02*self.Scale)
+			surface.DrawRect(-10, 0, 500, 30)
+			surface.DrawRect(-10, 30, 10, 20)
+			local weapon = self:getWeapon(k)
+			local lastshot = weapon:GetLastShot()
+			local nextshot = weapon:GetNextShot()
+			local ammo = weapon:GetAmmo()
+			draw.SimpleText(k.." "..t.weapons[self:GetNWInt("seat_"..k.."_actwep")], "wac_heli_big", 0, -2.5, Black, 0)
+			draw.SimpleText(ammo, "wac_heli_big", 480, -2.5, Black, 2)
+			cam.End3D2D()
+		end
+	end
+end
 local function DrawLine(v1,v2)
 	surface.DrawLine(v1.y,v1.z,v2.y,v2.z)
 end

@@ -72,7 +72,7 @@ ENT.Weapons = {
 				Vector(100,-40,80.75)
 			},
 			Ammo = 1600,
-			FireRate = 3900,
+			FireRate = 6000,
 			BulletType = "wac_base_20mm",
 			Sounds = {
 				shoot = "WAC/f16/gun.wav",
@@ -106,7 +106,7 @@ ENT.Weapons = {
 		}
 	},
 	["JDAM GBU-32 500lb"] = {
-		class = "wac_pod_gbomb",
+		class = "wac_pod_jdam",
 		info = {
 			Sequential = true,
 			Kind = "gb_bomb_gbu38",
@@ -144,11 +144,11 @@ ENT.Sounds={
 
 ENT.Camera = {
 	model = "models/mm1/box.mdl",
-	pos = Vector(149.2,0,150),
+	pos = Vector(149.2,0,10),
 	offset = Vector(-1,0,0),
 	viewPos = Vector(2,0,0),
-	maxAng = Angle(45, 90, 0),
-	minAng = Angle(-2, -90, 0),
+	maxAng = Angle(80, 0, 0),
+	minAng = Angle(0, 0, 0),
 	seat = 1
 }
 

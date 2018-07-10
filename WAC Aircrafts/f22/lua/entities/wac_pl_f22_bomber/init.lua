@@ -1,5 +1,6 @@
 include("shared.lua")
 AddCSLuaFile("shared.lua")
+AddCSLuaFile("cl_init.lua")
 
 function ENT:SpawnFunction(p, tr)
 	if (!tr.Hit) then return end

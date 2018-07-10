@@ -72,7 +72,7 @@ ENT.Weapons = {
 				Vector(100,-40,80.75)
 			},
 			Ammo = 1600,
-			FireRate = 3900,
+			FireRate = 6000,
 			BulletType = "wac_base_20mm",
 			Sounds = {
 				shoot = "WAC/f16/gun.wav",

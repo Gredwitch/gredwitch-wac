@@ -73,7 +73,7 @@ ENT.Weapons = {
 			},
 			Ammo = 1,
 			TkAmmo = 0,
-			FireRate = 3900,
+			FireRate = 6000,
 			BulletType = "wac_base_20mm",
 			Sounds = {
 				shoot = "WAC/f16/gun.wav",
@@ -109,11 +109,11 @@ ENT.Weapons = {
 		}
 	},
 	["JDAM GBU-32 500lb"] = {
-		class = "wac_pod_gbomb",
+		class = "wac_pod_jdam",
 		info = {
 			Sequential = true,
 			Kind = "gb_bomb_gbu38",
-			Admin = 0,
+			Admin = 1,
 			Pods = {
 				Vector(-53,85,56),
 				Vector(-53,-87,56),
@@ -125,7 +125,7 @@ ENT.Weapons = {
 		info = {
 			Sequential = true,
 			Kind = "gb_bomb_mk82",
-			Admin = 0,
+			Admin = 1,
 			Pods = {
 				Vector(-60,-129.5,54),
 				Vector(-60,127.5,54),
@@ -150,8 +150,8 @@ ENT.Camera = {
 	pos = Vector(119,-26.7,44),
 	offset = Vector(-1,0,0),
 	viewPos = Vector(2,0,0),
-	maxAng = Angle(45, 90, 0),
-	minAng = Angle(-2, -90, 0),
+	minAng = Angle(0, 0, 0),
+	maxAng = Angle(80, 0, 0),
 	seat = 1
 }
 
