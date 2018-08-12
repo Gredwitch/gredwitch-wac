@@ -55,8 +55,6 @@ timer.Simple(5,function()
 		elseif SERVER then
 			timer.Create("GredWAC-NotInstalled", 10, 0, function() print("Grediwtch's Base addon is not installed") end)
 		end
-	else
-		print("VERIFTRUE")
 	end
 end)
 
