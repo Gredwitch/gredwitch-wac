@@ -1,0 +1,6 @@
+{
+"title" : "[WAC] NH Industries NH90",
+"type" : "vehicle",
+"tags" : ["fun","realism"],
+"ignore" : ["*.psd", "*.ini", "*.svn*"]
+}

@@ -1,0 +1,6 @@
+{
+"title" : "[WAC] Yakovlev Yak-9K",
+"type" : "vehicle",
+"tags" : ["fun","realism"],
+"ignore" : ["*.psd", "*.vcproj", "*.svn*"]
+}

@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture"					"models\drgordon\black_ops_2\alouette_iii\alouette_interior_props"
+	"$bumpmap"		"models\drgordon\black_ops_2\alouette_iii\alouette_interior_props_n"
+	"$nocull"	"1"
+	"$phong"	"1"
+	"$phongexponent"	"25"
+	"$phongalbedotint"	"1"
+	"$phongboost"	"0.15"
+	"$phongfresnelranges"	"[1 2 3]"
+}

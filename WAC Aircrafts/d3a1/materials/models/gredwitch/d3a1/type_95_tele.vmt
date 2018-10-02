@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	$basetexture			"models/gredwitch/d3a1/type_95_tele"
+	$nocull 				1
+	$translucent			1
+}

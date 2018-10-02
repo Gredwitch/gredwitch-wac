@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$basetexture"					"models\drgordon\black_ops_2\alouette_iii\alouette_glass_exterior"
+	"$bumpmap"		"models\drgordon\glass_n"
+	"$halflambert" "1"				
+	"$nocull" "1"
+	"$translucent"			"1"
+}

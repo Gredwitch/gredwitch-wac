@@ -14,6 +14,7 @@ ENT.EngineForce        = 40
 ENT.Weight            = 1451
 ENT.SmokePos        = Vector(-225.7,6,82.4)
 ENT.FirePos         = ENT.SmokePos
+ENT.AutomaticFrameAdvance = true
 
 ENT.TopRotor = {
 	dir = -1,
