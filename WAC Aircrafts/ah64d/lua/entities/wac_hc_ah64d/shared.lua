@@ -7,7 +7,7 @@ ENT.Author			= "Gredwitch"
 ENT.Category		= "Gredwitch's Stuff"
 ENT.Spawnable		= true
 ENT.AdminSpawnable	= false
-ENT.EngineForce		= 160
+ENT.EngineForce		= 60
 ENT.Model			= "models/gredwitch/ah64d/apache-prop.mdl"
 ENT.SmokePos		= Vector(37,0,75)
 ENT.FirePos			= Vector(37,0,75)
@@ -84,7 +84,6 @@ ENT.Weapons = {
 				Vector(40.25,-55.84,41.45),
 			},
 			Ammo = 8,
-			FireRate = 150,
 			FaF = true,
 		}
 	},
@@ -97,7 +96,7 @@ ENT.Weapons = {
 			},
 			Ammo = 4,
 			FaF = true,
-			FireRate = 150,
+			FireRate = 100,
 		}
 	},
 	["M230"] = {
@@ -110,7 +109,8 @@ ENT.Weapons = {
 			Ammo = 1200,
 			Sounds = {
 				spin = "",
-				shoot1p = "WAC/cannon/havoc_cannon_1p.wav",
+				shoot1p = "WAC/ah64d/apache_shoot.wav",
+				stop1p = "WAC/ah64d/apache_stop.wav",
 				shoot3p = "WAC/cannon/havoc_cannon_3p.wav"
 			},
 		}
@@ -143,7 +143,7 @@ ENT.Camera = {
 	pos = Vector(204,0,2),
 	offset = Vector(-1,0,0),
 	viewPos = Vector(30, 0, 3.5),
-	maxAng = Angle(45, 90, 0),
+	maxAng = Angle(90, 90, 0),
 	minAng = Angle(-2, -90, 0),
 	seat = 2
 }

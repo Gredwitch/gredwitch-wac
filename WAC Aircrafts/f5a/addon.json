@@ -1,0 +1,6 @@
+{
+"title" : "[WAC] Northrop F-5A Freedom Fighter",
+"type" : "vehicle",
+"tags" : ["fun","realism"],
+"ignore" : ["*.psd", "*.ini", "*.svn*"]
+}

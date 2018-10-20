@@ -75,12 +75,12 @@ ENT.Weapons = {
 			FireRate = 625,
 			TkAmmo = 0,
 			Ammo = 1,
-			BulletType = "wac_base_30mm",
 			Sounds = {
 				spin = "",
-				shoot1p = "WAC/cannon/havoc_cannon_1p.wav",
+				shoot1p = "WAC/ah64d/apache_shoot.wav",
+				stop1p = "WAC/ah64d/apache_stop.wav",
 				shoot3p = "WAC/cannon/havoc_cannon_3p.wav"
-			}
+			},
 		}
 	},
 }

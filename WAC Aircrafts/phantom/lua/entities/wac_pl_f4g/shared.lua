@@ -12,9 +12,9 @@ ENT.AdminSpawnable		= true
 
 ENT.Model            = "models/sentry/f4.mdl"
 ENT.RotorPhModel        = "models/props_junk/sawblade001a.mdl"
-ENT.RotorModel        = "models/props_junk/PopCan01a.mdl"
+ENT.RotorModel        = "models/mm1/box.mdl"
 
-ENT.rotorPos        = Vector(-155,24,65)
+ENT.rotorPos        = Vector(0,0,0)
 ENT.TopRotorDir        = 1.0
 ENT.AutomaticFrameAdvance = true
 ENT.EngineForce        = 10000

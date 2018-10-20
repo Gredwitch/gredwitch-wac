@@ -41,17 +41,17 @@ ENT.Wheels={
 		mdl="models/gredwitch/a-4/a-4_wf.mdl",
 		pos=Vector(116.304,0.217875,0.08842),
 		friction=10,
-		mass=400,
+		mass=200,
 	},
 	{
 		mdl="models/gredwitch/a-4/a-4_wr.mdl",
-		pos=Vector(-16.6737,-45.3648,0),
+		pos=Vector(-16.6737,-45.3648,15),
 		friction=10,
-		mass=400,
+		mass=200,
 	},
 	{
 		mdl="models/gredwitch/a-4/a-4_wl.mdl",
-		pos=Vector(-16.6737,45.3643,0),
+		pos=Vector(-16.6737,45.3643,15),
 		friction=10,
 		mass=1400,
 	},
@@ -96,6 +96,7 @@ ENT.Weapons = {
 		class = "wac_pod_mis",
 		info = {
 			Ammo = 2,
+			FaF = true,
 			Pods = {
 				Vector(7.5,-73.5,46),
 				Vector(7.5,73.5,46),

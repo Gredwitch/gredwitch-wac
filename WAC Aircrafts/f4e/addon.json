@@ -1,0 +1,6 @@
+{
+"title" : "[WAC] F-4E Phantom II",
+"type" : "vehicle",
+"tags" : ["fun","realism"],
+"ignore" : ["*.psd", "*.ini", "*.svn*"]
+}

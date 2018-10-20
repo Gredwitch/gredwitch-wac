@@ -4,22 +4,23 @@ AddCSLuaFile("shared.lua")
 function ENT:SpawnFunction(p, tr)
 	if (!tr.Hit) then return end
 	local e = ents.Create(ClassName)
-	e:SetPos(tr.HitPos + tr.HitNormal*20)
+	e:SetPos(tr.HitPos + tr.HitNormal*2)
 	e.Owner = p
 	e:Spawn()
 	e:Activate()
+	e:SetBodygroup(0,1)
 	return e
 end
 
 ENT.Aerodynamics = {
 	Rotation = {
 		Front = Vector(0, -0.5, 0),
-		Right = Vector(0, 0, 70), -- Rotate towards flying direction
+		Right = Vector(0, 0, 10), -- Rotate towards flying direction
 		Top = Vector(0, 0, 0)
 	},
 	Lift = {
 		Front = Vector(0, 0, 13.25), -- Go up when flying forward
-		Right = Vector(0, 0, 0),
+		Right = Vector(0, 0, 70),
 		Top = Vector(0, 0, -0.25)
 	},
 	Rail = Vector(1, 5, 20),
@@ -32,10 +33,28 @@ ENT.Aerodynamics = {
 function ENT:PhysicsUpdate(ph)
 	self:base("wac_pl_base").PhysicsUpdate(self,ph)
 	
-	self:SetBodygroup(3,0)
-	self:SetBodygroup(4,0)
-	self:SetBodygroup(1,0)
-	self:SetBodygroup(2,0)
+	local ammo = self.weapons["AGM-88 HARM"]:GetAmmo()
+	local ammo9 = self.weapons["AIM-9"]:GetAmmo()
+	if ammo == 2 then 
+		self:SetBodygroup(3,0)
+		self:SetBodygroup(4,0)
+	elseif ammo == 1 then 
+		self:SetBodygroup(3,1)
+		self:SetBodygroup(4,0)
+	elseif ammo == 0 then 
+		self:SetBodygroup(3,1)
+		self:SetBodygroup(4,1)
+	end
+	if ammo9 == 2 then 
+		self:SetBodygroup(1,0)
+		self:SetBodygroup(2,0)
+	elseif ammo9 == 1 then 
+		self:SetBodygroup(1,0)
+		self:SetBodygroup(2,1)
+	elseif ammo9 == 0 then 
+		self:SetBodygroup(1,1)
+		self:SetBodygroup(2,1)
+	end
 	
 	local trace=util.QuickTrace(self:LocalToWorld(Vector(0,0,62)), self:LocalToWorld(Vector(0,0,50)), {self, self.wheels[1], self.wheels[2], self.wheels[3], self.rotor})
 	local phys=self:GetPhysicsObject()

@@ -1,0 +1,6 @@
+{
+"title" : "[WAC] Grumman A-6 Intruder",
+"type" : "vehicle",
+"tags" : ["fun","realism"],
+"ignore" : ["*.psd", "*.ini", "*.svn*"]
+}
