@@ -1,0 +1,6 @@
+{
+"title" : "[WAC] UH-60 Stealth Black Hawk",
+"type" : "vehicle",
+"tags" : ["fun","realism"],
+"ignore" : ["*.psd", "*.ini", "*.svn*"]
+}
