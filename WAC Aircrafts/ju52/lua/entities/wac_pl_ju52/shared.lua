@@ -146,7 +146,6 @@ ENT.Sounds={
 	Start="WAC/jenny/start.wav",
 	Blades="WAC/jenny/internal.wav",
 	Engine="",
-	Radio="radio/german.wav",
 	MissileAlert="HelicopterVehicle/MissileNearby.mp3",
 	MissileShoot="HelicopterVehicle/MissileShoot.mp3",
 	MinorAlarm="HelicopterVehicle/MinorAlarm.mp3",

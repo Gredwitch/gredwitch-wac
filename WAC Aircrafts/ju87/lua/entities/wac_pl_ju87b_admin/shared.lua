@@ -63,7 +63,7 @@ ENT.Weapons = {
 			TkAmmo = 0,
 			Sounds = {
 				shoot = "WAC/stuka/gun.wav",
-				stop = "WAC/stuka/gun_stop.wav",
+				stop = "WAC/stuka/gunstop.wav",
 			}
 		}
 	},

@@ -111,7 +111,7 @@ ENT.Weapons = {
 				spin = "",
 				shoot1p = "WAC/ah64d/apache_shoot.wav",
 				stop1p = "WAC/ah64d/apache_stop.wav",
-				shoot3p = "WAC/cannon/havoc_cannon_3p.wav"
+				shoot3p = "WAC/ah64d/apache_cannon.wav"
 			},
 		}
 	},

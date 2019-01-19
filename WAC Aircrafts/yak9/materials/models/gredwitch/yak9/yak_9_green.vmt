@@ -1,12 +1,12 @@
 "VertexLitGeneric"
 {
 	$basetexture			"models/gredwitch/yak9/yak_9_green_a"
-	$bumpmap				"models/gredwitch/yak9/yak_9_n"
+	$bumpmap				"models/gredwitch/yak9/yak_9_green_n"
 	$halflambert			1
 	$nocull 				1
 	$alphatest 				0
 
-	$phongexponenttexture 	"models/gredwitch/yak9/yak_9_n"
+	$phongexponenttexture 	"models/gredwitch/yak9/yak_9_green_n"
 	$phong 					1
 	$phongboost 			0.2
 	$phongfresnelranges		"[2 2 2]"

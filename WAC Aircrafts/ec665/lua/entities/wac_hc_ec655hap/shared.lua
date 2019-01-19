@@ -82,6 +82,7 @@ ENT.Weapons = {
 				Vector(3.22,-58,55)
 			},
 			FireRate = 250,
+			FaF = true,
 			Ammo = 8
 		}
 	},
@@ -95,9 +96,10 @@ ENT.Weapons = {
 			BulletType = "wac_base_30mm",
 			Sounds = {
 				spin = "",
-				shoot1p = "WAC/cannon/havoc_cannon_1p.wav",
+				shoot1p = "WAC/ec655/tiger_shoot.wav",
+				stop1p = "WAC/ec655/tiger_stop.wav",
 				shoot3p = "WAC/cannon/havoc_cannon_3p.wav"
-			}
+			},
 		}
 	}
 }

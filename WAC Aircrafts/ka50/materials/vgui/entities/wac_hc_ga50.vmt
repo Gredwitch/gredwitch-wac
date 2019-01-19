@@ -1,4 +1,7 @@
-"LightmappedGeneric"
+"UnlitGeneric"
 {
-	"$basetexture" "vgui/entities/wac_hc_ga50"
+	"$basetexture"			"VGUI/entities/wac_hc_ga50"
+	"$vertexcolor" 			1
+	"$vertexalpha" 			1
+	"$nolod" 				1
 }

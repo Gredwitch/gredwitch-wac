@@ -1,0 +1,56 @@
+	
+if SERVER then AddCSLuaFile() end
+
+timer.Simple(5,function()
+	if CLIENT then
+		GredwitchBase=steamworks.ShouldMountAddon(1131455085) and steamworks.IsSubscribed(1131455085)
+		WACBase=steamworks.ShouldMountAddon(104990330) and steamworks.IsSubscribed(104990330)
+		RequiredContent=steamworks.ShouldMountAddon(108909229) and steamworks.IsSubscribed(108909229)
+		if !GredwitchBase then
+			GredFrame=vgui.Create('DFrame')
+			GredFrame:SetTitle("Grediwtch's Base is not installed / enabled")
+			GredFrame:SetSize(ScrW()*0.95, ScrH()*0.95)
+			GredFrame:SetPos((ScrW() - GredFrame:GetWide()) / 2, (ScrH() - GredFrame:GetTall()) / 2)
+			GredFrame:MakePopup()
+			
+			local h=vgui.Create('DHTML')
+			h:SetParent(GredFrame)
+			h:SetPos(GredFrame:GetWide()*0.005, GredFrame:GetTall()*0.03)
+			local x,y = GredFrame:GetSize()
+			h:SetSize(x*0.99,y*0.96)
+			h:SetAllowLua(true)
+			h:OpenURL('https://steamcommunity.com/sharedfiles/filedetails/?id=1131455085.html')
+		
+		end
+		if !WACBase then
+			GredWACFrame=vgui.Create('DFrame')
+			GredWACFrame:SetTitle("WAC is not installed / enabled")
+			GredWACFrame:SetSize(ScrW()*0.95, ScrH()*0.95)
+			GredWACFrame:SetPos((ScrW() - GredWACFrame:GetWide()) / 2, (ScrH() - GredWACFrame:GetTall()) / 2)
+			GredWACFrame:MakePopup()
+			
+			local h=vgui.Create('DHTML')
+			h:SetParent(GredWACFrame)
+			h:SetPos(GredWACFrame:GetWide()*0.005, GredWACFrame:GetTall()*0.03)
+			local x,y = GredWACFrame:GetSize()
+			h:SetSize(x*0.99,y*0.96)
+			h:SetAllowLua(true)
+			h:OpenURL('https://steamcommunity.com/sharedfiles/filedetails/?id=104990330.html')
+		end
+		if !RequiredContent then
+			GredWACCFrame=vgui.Create('DFrame')
+			GredWACCFrame:SetTitle("WAC Community 2 is not installed / enabled")
+			GredWACCFrame:SetSize(ScrW()*0.95, ScrH()*0.95)
+			GredWACCFrame:SetPos((ScrW() - GredWACCFrame:GetWide()) / 2, (ScrH() - GredWACCFrame:GetTall()) / 2)
+			GredWACCFrame:MakePopup()
+			
+			local h=vgui.Create('DHTML')
+			h:SetParent(GredWACCFrame)
+			h:SetPos(GredWACCFrame:GetWide()*0.005, GredWACCFrame:GetTall()*0.03)
+			local x,y = GredWACCFrame:GetSize()
+			h:SetSize(x*0.99,y*0.96)
+			h:SetAllowLua(true)
+			h:OpenURL('https://steamcommunity.com/workshop/filedetails/?id=108909229.html')
+		end
+	end
+end)
