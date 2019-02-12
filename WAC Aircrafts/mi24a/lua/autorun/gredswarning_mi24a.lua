@@ -3,6 +3,7 @@ if SERVER then AddCSLuaFile() end
 
 timer.Simple(5,function()
 	if CLIENT then
+		if GetConVar("gred_cl_enable_popups"):GetInt() != 1 then return end
 		GredwitchBase=steamworks.ShouldMountAddon(1131455085) and steamworks.IsSubscribed(1131455085)
 		WACBase=steamworks.ShouldMountAddon(104990330) and steamworks.IsSubscribed(104990330)
 		if !GredwitchBase then

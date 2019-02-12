@@ -3,10 +3,11 @@ if SERVER then AddCSLuaFile() end
 
 timer.Simple(5,function()
 	if CLIENT then
+		if GetConVar("gred_cl_enable_popups"):GetInt() != 1 then return end
 		WACBase=steamworks.ShouldMountAddon(104990330) and steamworks.IsSubscribed(104990330)
 		if !WACBase then
 			GredWACFrame=vgui.Create('DFrame')
-			GredWACFrame:SetTitle("WAC is not installed / enabled")
+			GredWACFrame:SetTitle("WAC is not installed / enabled. To disable this, open the spawnmenu, open the top right 'Options' tab, click on 'Misc' under the 'Gredwitch's Stuff' subtab and untick the 'Enable pop ups about missing content' checkbox.")
 			GredWACFrame:SetSize(ScrW()*0.95, ScrH()*0.95)
 			GredWACFrame:SetPos((ScrW() - GredWACFrame:GetWide()) / 2, (ScrH() - GredWACFrame:GetTall()) / 2)
 			GredWACFrame:MakePopup()

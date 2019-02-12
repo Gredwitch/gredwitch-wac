@@ -65,7 +65,7 @@ ENT.Weapons = {
 			Ammo = 2,
 			FireRate = 3000,
 			TkAmmo = 0,
-			BulletType = "wac_base_20mm",
+			BulletType = "wac_base_7mm",
 		}
 	},
 	["Hydra 70"] = {
