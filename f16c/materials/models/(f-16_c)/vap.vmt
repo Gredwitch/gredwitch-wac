@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+
+$basetexture "models/(F-16_C)/vap.vtf"
+$nocull 1
+	"$translucent" 1
+
+
+}

@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+
+	"$basetexture" "models\(UH-60L)\lights2"
+$alphatest 1
+$selfillum 1
+$selfillummask "models\(UH-60L)\lights2_a"
+
+}

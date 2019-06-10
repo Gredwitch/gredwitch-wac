@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+
+	"$basetexture" "models\(UH-60L)\white"
+$selfillum 1
+$selfillummaskscale 0.1
+
+}

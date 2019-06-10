@@ -1,0 +1,16 @@
+vertexLitGeneric
+{
+	"$basetexture" "models/(AH64)/blur/blur_sercle"
+	"$translucent" 1
+	"$bumpmap"	"models/(AH64)/blur/roter_cercle_n"
+	"$phong" "1"						
+
+	
+
+
+	"$phongboost" "6"						
+	"$phongfresnelranges"	"[1 1 1]"	
+
+	
+	
+}

@@ -1,0 +1,5 @@
+vertexLitGeneric
+{
+	"$basetexture" "models/(AH64)/hud"
+	"$selfillum" 1
+}

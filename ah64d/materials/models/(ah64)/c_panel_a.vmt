@@ -1,0 +1,5 @@
+vertexLitGeneric
+{
+	"$basetexture" "models/(AH64)/c_panel_A"
+	"$translucent" 1
+}

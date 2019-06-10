@@ -1,0 +1,13 @@
+vertexLitGeneric
+{
+	"$basetexture" "models/(AH64)/blur/roter_blur"
+	"$translucent" 1
+"$bumpmap" "models/(AH64)/blur/roter_blur_n"
+
+
+"$phong" "1"
+	"$phongboost" "1"						
+	"$phongfresnelranges"	"[1 1 1]"
+	
+	"$phongexponenttexture" "models/(AH64)/blur/roter_blur_n"
+}

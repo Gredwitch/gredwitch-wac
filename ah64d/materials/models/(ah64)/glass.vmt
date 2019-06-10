@@ -1,0 +1,24 @@
+"VertexLitGeneric"
+{
+
+	"$basetexture" "models\(AH64)\glass2"
+	"$bumpmap" "models\(AH64)\glass_n"
+	"$halflambert" "1"				
+	"$nocull" 0
+                "$alphatest" 0
+$translucent "1"	
+
+				
+
+	"$phong" "1"						
+	"$phongwarptexture" "models\(AH64)\glass_w"
+	"$phongboost" "5"						
+	"$phongfresnelranges"	"[1 1 1]"	
+
+	"$PhongAlbedoTint" "0"		
+
+
+
+
+}
+

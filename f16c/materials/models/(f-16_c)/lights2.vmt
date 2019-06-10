@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+
+	"$basetexture" "models\(F-16_C)\4T_L"
+	
+$selfillum "1"
+
+}

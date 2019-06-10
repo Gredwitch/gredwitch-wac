@@ -1,0 +1,27 @@
+"VertexlitGeneric"
+{
+
+	"$basetexture" "models\(F-16_C)\glass"
+	"$bumpmap" "models\(F-16_C)\glass_n"
+				
+"$nodecal" "1"
+"$translucent" "1"
+"$alphatest""0"
+"$phong" 1
+"$phongboost" "1"
+	"$phongexponenttexture" "models\(F-16_C)\glass_w"
+"$envmap" "env_cubemap"
+"$envmapfresnel" "2"
+"$phongfresnelranges" "[0.01 0.35 3.0]"
+"$colorfix" "{255 255 255}"
+"Proxies"
+
+{
+srcVar1 $colorfix
+resultVar$color
+}
+}
+}
+
+
+}

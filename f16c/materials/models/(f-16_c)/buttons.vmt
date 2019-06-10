@@ -1,0 +1,7 @@
+"VertexlitGeneric"
+{
+
+	"$basetexture" "models\(F-16_C)\buttons"
+	"$bumpmap" "models\(F-16_C)\2c_n"
+	"$selfillum" "1"
+}

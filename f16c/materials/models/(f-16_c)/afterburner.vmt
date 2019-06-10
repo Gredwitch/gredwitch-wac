@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+
+$basetexture "models/(F-16_C)/jet.vtf"
+	"$translucent" 1
+$selfillum "1"
+$selfillummask" "models/(F-16_C)/jet_A.vtf"
+
+}

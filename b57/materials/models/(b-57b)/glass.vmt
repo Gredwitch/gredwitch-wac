@@ -1,0 +1,28 @@
+"VertexlitGeneric"
+{
+
+	"$basetexture" "models\(B-57B)\glass"
+	"$bumpmap" "models\(B-57B)\glass_n"
+	"$halflambert" "1"				
+	"$nocull" 1
+	"$translucent" 1
+                "$alphatest" 0		
+
+	"$normalmapalphaenvmapmask" 1				
+	"$envmap" "env_cubemap"					
+	"$envmaptint" "[ .01 .01 .01 ]"					
+ 	"$envmapFresnel" "0.5"					
+
+	"$phong" "1"	
+	"$phongwarptexture" "models\(B-57B)\glass_w"
+
+	"$phongboost" "1"						
+	"$phongfresnelranges"	"[ 2 2 8]"	
+
+	"$PhongAlbedoTint" "1"		
+
+	"$rimlight"     "1"
+	"$rimlightexponent"   "1" 
+	"$rimlightboost"   "0.2"
+	"$rimmask"      "1"
+}

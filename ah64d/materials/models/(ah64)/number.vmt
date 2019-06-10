@@ -1,0 +1,5 @@
+vertexLitGeneric
+{
+	"$basetexture" "models/(AH64)/number"
+	"$translucent" 0
+}

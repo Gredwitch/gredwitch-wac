@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+
+	"$basetexture" "models\(B-17E)\gauges2"
+	"$bumpmap" "models\(B-17E)\gauges2_n"
+	"$halflambert" "1"				
+	"$nocull" 1
+                "$alphatest" 1		
+
+					
+
+}

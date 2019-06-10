@@ -1,0 +1,26 @@
+
+"VertexlitGeneric"
+{
+
+	$basetexture "models\(BF109 E-7)\blur"
+	"$bumpmap" "models\(BF109 E-7)\Normal\blur"
+	"$bumpmap" "models\(BF109 E-7)\Normal\glass"
+	"$halflambert" "1"				
+	"$nocull" 1
+                
+"$translucent"     "1"		
+
+	"$normalmapalphaenvmapmask" 1				
+	"$envmap" "env_cubemap"					
+	"$envmaptint" "[ .01 .01 .01 ]"					
+ 	"$envmapFresnel" "0.5"					
+
+	"$phong" "1"						
+	"$phongexponenttexture" "models\(BF109 E-7)\Phong\blur"
+	"$phongboost" "2"						
+	"$phongfresnelranges"	"[ .2 1.2 8]"	
+
+	"$PhongAlbedoTint" "1"	
+               "$lightwarptexture" "models\(BF109 E-7)\wrp"		
+
+}

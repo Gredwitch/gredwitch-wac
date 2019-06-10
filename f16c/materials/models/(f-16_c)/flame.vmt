@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+
+$basetexture "models/(F-16_C)/flame.vtf"
+	"$translucent" 1
+$nocull "1"
+$selfillum "1"
+$selfillummask" "models/(F-16_C)/flame_A.vtf"
+
+}
