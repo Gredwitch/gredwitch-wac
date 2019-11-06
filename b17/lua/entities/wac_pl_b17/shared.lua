@@ -157,8 +157,9 @@ ENT.Weapons = {
 			ShootOffset = Vector(30,0, 0),
 			FireRate = 500,
 			Sounds = {
-			    shoot = "wac/b17g/shoot_start.wav",
-				spin = "",
+			    shoot1p = "",
+			    shoot3p = "",
+				spin = "wac/b17g/shoot_start.wav",
 				stop = "wac/b17g/shoot_end.wav",
 			},
 		}

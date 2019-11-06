@@ -143,8 +143,9 @@ ENT.Weapons = {
 			FireRate = 500,
 			TkAmmo = 0,
 			Sounds = {
-			    shoot = "wac/b17g/shoot_start.wav",
-				spin = "";
+			    shoot1p = "",
+			    shoot3p = "",
+				spin = "wac/b17g/shoot_start.wav",
 				stop = "wac/b17g/shoot_end.wav",
 			},
 		}

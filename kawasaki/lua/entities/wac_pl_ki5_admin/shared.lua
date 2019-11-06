@@ -97,7 +97,7 @@ ENT.Camera = {
 	viewPos = Vector(0,0,0),
 	minAng = Angle(-90, -360, 0),
 	minAng = Angle(-90, -360, 0),
-	seat = 2
+	seat = 1
 }
 
 ENT.Sounds = {
